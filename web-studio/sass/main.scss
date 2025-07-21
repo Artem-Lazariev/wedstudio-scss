@@ -1,0 +1,49 @@
+/* Шапка сайту */
+.header {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--border-header);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-list,
+.header-contact-list {
+  display: flex;
+  gap: 50px;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 93px;
+  width: 100%;
+}
+
+.header-logo {
+  font-family: var(--second-font);
+  color: var(--logo-header-color);
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;/**/
+}
+
+.header-logo span {
+  color: var(--accent-color);
+}
+
+.header-link {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--menu-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-link.active {
+  color: var(--accent-color);
+}
