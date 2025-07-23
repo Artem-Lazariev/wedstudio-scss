@@ -1,49 +1,244 @@
+$logo-header-color: #000;
+$menu-color: #212121;
+$title-color: #212121;
+$text-color: #757575;
+$bg-team-color: #F5F4FA;
+$bg-button: #F5F4FA;
+$accent-color: #2196F3;
+$second-accent-color: #ffffff;
+$contact-footer-color: rgba(255, 255, 255, 0.6);
+$bg-footer-color: #2F303A;
+$border-header: #ECECEC;
+$border-portfolio: #EEEEEE;
+
+$main-font: "Roboto", sans-serif;
+$second-font: "Raleway", sans-serif;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $main-font;
+  font-size: 14px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1170px;
+}
+
 /* Шапка сайту */
 .header {
   padding: 24px 0;
-  border-bottom: 1px solid var(--border-header);
+  border-bottom: 1px solid $border-header;
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 93px;
+    width: 100%;
+  }
+
+  .header-logo {
+    font-family: $second-font;
+    color: $logo-header-color;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+
+    span {
+      color: $accent-color;
+    }
+  }
+
+  .header-list,
+  .header-contact-list {
+    display: flex;
+    gap: 50px;
+  }
+
+  .header-link {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: $menu-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &.active {
+      color: $accent-color;
+    }
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+
+      .underlined {
+        width: 100%;
+        transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+
+    .underlined {
+      width: 0;
+      height: 3px;
+      background-color: $accent-color;
+      border-radius: 2px;
+      position: relative;
+      top: 30px;
+      left: 0;
+      transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      transform-origin: left;
+    }
+  }
+
+  .header-contact-link {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: $text-color;
+    display: flex;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      fill: $accent-color;
+      transition: 0.6s;
+    }
+
+    svg {
+      width: 24px;
+      height: 16px;
+      display: inline-block;
+      fill: currentColor;
+    }
+  }
 }
 
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+/* HERO */
+.hero {
+  padding: 200px 0;
+  text-align: center;
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/main-page/hero-bg.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .hero-title {
+    color: $second-accent-color;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+  }
+
+  .hero-button {
+    padding: 10px 32px;
+    border: none;
+    background-color: $accent-color;
+    color: $second-accent-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    font-family: $main-font;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+  }
 }
 
-.header-list,
-.header-contact-list {
-  display: flex;
-  gap: 50px;
+/* details */
+.details {
+  padding: 94px 0;
+
+  .details-list {
+    display: flex;
+    gap: 30px;
+  }
+
+  .details-item {
+    &::before {
+      content: "";
+      background: url("../images/main-page/fistpicture.svg") center no-repeat,
+        $bg-button;
+      width: 270px;
+      height: 120px;
+      display: block;
+      border-radius: 4px;
+      margin-bottom: 30px;
+    }
+
+    &:nth-child(2)::before {
+      background-image: url("../images/main-page/vector.svg");
+    }
+
+    &:nth-child(3)::before {
+      background-image: url("../images/main-page/diagram.svg");
+    }
+
+    &:nth-child(4)::before {
+      background-image: url("../images/main-page/astronaut1.svg");
+    }
+  }
+
+  .details-title {
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $title-color;
+    font-weight: 700;
+    padding-bottom: 10px;
+  }
+
+  .details-desc {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $text-color;
+  }
 }
 
-.header-wrapper {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 93px;
-  width: 100%;
+/* WORK */
+.work {
+  padding-bottom: 94px;
+
+  .work-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    color: $title-color;
+    padding-bottom: 50px;
+  }
+
+  .work-list {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      background-color: #2f303a;
+      opacity: 0.8;
+      text-transform: uppercase;
+      height: 70px;
+      width: 100%;
+      position: relative;
+      top: -68px;
+    }
+  }
 }
 
-.header-logo {
-  font-family: var(--second-font);
-  color: var(--logo-header-color);
-  font-weight: 700;
-  font-size: 26px;
-  letter-spacing: 0.03em;/**/
-}
+// далі структуруй інші секції (company, teams, footer, modal, portfolio) аналогічно
 
-.header-logo span {
-  color: var(--accent-color);
-}
-
-.header-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  color: var(--menu-color);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.header-link.active {
-  color: var(--accent-color);
-}
