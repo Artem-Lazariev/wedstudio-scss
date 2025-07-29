@@ -2,5 +2,11 @@
   "name": "web-studio",
   "version": "1.0.0",
   "dependencies": {
+  },
+  "devDependencies": {
+    "sass": "^1.75.0"
+  },
+  "scripts": {
+    "build-css": "sass sass/main.scss css/style.css"
   }
 }
