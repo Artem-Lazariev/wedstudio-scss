@@ -1,22 +1,7 @@
 
 /* === GLOBAL STYLES === */
 
-:root {
-  --main-font: 'Roboto', sans-serif;
-  --second-font: 'Montserrat', sans-serif;
-  --accent-color: #2196F3;
-  --second-accent-color: #fff;
-  --logo-header-color: #2f303a;
-  --menu-color: #afb1b8;
-  --text-color: #757575;
-  --title-color: #2f303a;
-  --border-header: #e0e0e0;
-  --bg-button: #f5f5f5;
-  --bg-team-color: #f9f9f9;
-  --bg-footer-color: #2f303a;
-  --contact-footer-color: #afb1b8;
-}
-
+@import "verebels.scss";
 * {
   box-sizing: border-box;
 }
