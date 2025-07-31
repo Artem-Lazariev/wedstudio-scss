@@ -263,7 +263,7 @@ header .header-contact-link svg {
 .teams .blue {
   color: var(--accent-color);
 }
-.teams .teams-title {
+.teams-title {
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.03em;
@@ -271,42 +271,42 @@ header .header-contact-link svg {
   color: var(--title-color);
   padding-bottom: 50px;
 }
-.teams .teams-list {
+.teams-list {
   display: flex;
   gap: 30px;
 }
-.teams .teams-list .teams-item {
+.teams-list .teams-item {
   border-radius: 0 0 4px 4px;
   text-align: center;
   background-color: var(--second-accent-color);
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.14), 0 1px 3px rgba(0, 0, 0, 0.12);
 }
-.teams .teams-list .teams-item .teams-image {
+.teams-list .teams-item .teams-image {
   width: 270px;
   height: 260px;
   display: inline-block;
   padding-bottom: 30px;
 }
-.teams .teams-list .teams-item .teams-name {
+.teams-list .teams-item .teams-name {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.03em;
   color: var(--title-color);
   padding-bottom: 10px;
 }
-.teams .teams-list .teams-item .teams-job {
+.teams-list .teams-item .teams-job {
   font-size: 16px;
   letter-spacing: 0.03em;
   color: var(--text-color);
   padding-bottom: 30px;
 }
-.teams .teams-list .teams-item .teams-messengers {
+.teams-list .teams-item .teams-messengers {
   display: flex;
   justify-content: center;
   gap: 10px;
   margin-bottom: 30px;
 }
-.teams .teams-list .teams-item .teams-messengers svg {
+.teams-list .teams-item .teams-messengers svg {
   fill: #afb1b8;
   border-radius: 50%;
   padding: 10px;
@@ -315,7 +315,7 @@ header .header-contact-link svg {
   transition: 0.3s;
   cursor: pointer;
 }
-.teams .teams-list .teams-item .teams-messengers svg:hover {
+.teams-list .teams-item .teams-messengers svg:hover {
   fill: var(--second-accent-color);
   background-color: var(--accent-color);
 }
