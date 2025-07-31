@@ -9,7 +9,7 @@
   &-item {
     &::before {
       content: "";
-      background: url("../images/main-page/fistpicture.svg") center no-repeat, var(--bg-button);
+      background: url("../../images/main-page/fistpicture.svg") center no-repeat, var(--bg-button);
       width: 270px;
       height: 120px;
       display: block;
@@ -17,9 +17,9 @@
       margin-bottom: 30px;
     }
 
-    &:nth-child(2)::before { background-image: url("../images/main-page/vector.svg"); }
-    &:nth-child(3)::before { background-image: url("../images/main-page/diagram.svg"); }
-    &:nth-child(4)::before { background-image: url("../images/main-page/astronaut1.svg"); }
+    &:nth-child(2)::before { background-image: url("../../images/main-page/Vector.svg"); }
+    &:nth-child(3)::before { background-image: url("../../images/main-page/diagram.svg"); }
+    &:nth-child(4)::before { background-image: url("../../images/main-page/astronaut1.svg"); }
   }
 
   &-title {

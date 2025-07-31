@@ -121,7 +121,7 @@ header .header-contact-link svg {
 .hero {
   padding: 200px 0;
   text-align: center;
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-page/hero-bg.png) no-repeat center/cover;
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/main-page/hero-bg.png) no-repeat center/cover;
 }
 .hero-title {
   color: var(--second-accent-color);
@@ -157,7 +157,7 @@ header .header-contact-link svg {
 }
 .details-item::before {
   content: "";
-  background: url("../images/main-page/fistpicture.svg") center no-repeat, var(--bg-button);
+  background: url("../../images/main-page/fistpicture.svg") center no-repeat, var(--bg-button);
   width: 270px;
   height: 120px;
   display: block;
@@ -165,13 +165,13 @@ header .header-contact-link svg {
   margin-bottom: 30px;
 }
 .details-item:nth-child(2)::before {
-  background-image: url("../images/main-page/vector.svg");
+  background-image: url("../../images/main-page/Vector.svg");
 }
 .details-item:nth-child(3)::before {
-  background-image: url("../images/main-page/diagram.svg");
+  background-image: url("../../images/main-page/diagram.svg");
 }
 .details-item:nth-child(4)::before {
-  background-image: url("../images/main-page/astronaut1.svg");
+  background-image: url("../../images/main-page/astronaut1.svg");
 }
 .details-title {
   letter-spacing: 0.03em;
