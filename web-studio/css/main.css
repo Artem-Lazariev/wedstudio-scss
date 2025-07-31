@@ -39,7 +39,7 @@ a {
   text-decoration: none;
 }
 
-/* === header === */
+/* === HEADER === */
 header {
   margin-bottom: 15px;
 }
@@ -116,13 +116,13 @@ header .header-contact-link svg {
   fill: currentColor;
 }
 
-/* === HERO === */
+/* ===  HERO === */
 .hero {
   padding: 200px 0;
   text-align: center;
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-page/hero-bg.png) no-repeat center/cover;
 }
-.hero .hero-title {
+.hero-title {
   color: var(--second-accent-color);
   font-weight: 900;
   font-size: 44px;
@@ -131,7 +131,7 @@ header .header-contact-link svg {
   text-transform: uppercase;
   padding-bottom: 30px;
 }
-.hero .hero-button {
+.hero-button {
   padding: 10px 32px;
   border: none;
   background-color: var(--accent-color);
@@ -146,15 +146,14 @@ header .header-contact-link svg {
   cursor: pointer;
 }
 
-/* === DETAILS === */
 .details {
   padding: 94px 0;
 }
-.details .details-list {
+.details-list {
   display: flex;
   gap: 30px;
 }
-.details .details-item::before {
+.details-item::before {
   content: "";
   background: url("../images/main-page/fistpicture.svg") center no-repeat, var(--bg-button);
   width: 270px;
@@ -163,60 +162,28 @@ header .header-contact-link svg {
   border-radius: 4px;
   margin-bottom: 30px;
 }
-.details .details-item:nth-child(2)::before {
+.details-item:nth-child(2)::before {
   background-image: url("../images/main-page/vector.svg");
 }
-.details .details-item:nth-child(3)::before {
+.details-item:nth-child(3)::before {
   background-image: url("../images/main-page/diagram.svg");
 }
-.details .details-item:nth-child(4)::before {
+.details-item:nth-child(4)::before {
   background-image: url("../images/main-page/astronaut1.svg");
 }
-.details .details-title {
+.details-title {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-color);
   font-weight: 700;
   padding-bottom: 10px;
 }
-.details .details-desc {
+.details-desc {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
 
-/* === WORK === */
-.work {
-  padding-bottom: 94px;
-}
-.work .work-title {
-  text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-  letter-spacing: 0.03em;
-  color: var(--title-color);
-  padding-bottom: 50px;
-}
-.work .work-list {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-}
-.work .work-list div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  background-color: #2f303a;
-  opacity: 0.8;
-  text-transform: uppercase;
-  height: 70px;
-  width: 100%;
-  position: relative;
-  top: -68px;
-}
-
-/* === COMPANY === */
 .company {
   display: flex;
   flex-direction: column;
@@ -229,12 +196,12 @@ header .header-contact-link svg {
   font-weight: bold;
   font-size: 36px;
 }
-.company .company-list {
+.company-list {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-.company .company-list li {
+.company-list li {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -243,15 +210,46 @@ header .header-contact-link svg {
   width: 170px;
   height: 92px;
 }
-.company .company-list li:hover {
+.company-list li:hover {
   color: var(--accent-color);
   border-color: var(--accent-color);
   transition: 0.6s;
 }
-.company .company-list li svg, .company .company-list li use {
+.company-list li svg, .company-list li use {
   width: 106px;
   height: 60px;
   fill: currentColor;
+}
+
+/* === WORK === */
+.work {
+  padding-bottom: 94px;
+}
+.work-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  padding-bottom: 50px;
+}
+.work-list {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.work-list div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #2f303a;
+  opacity: 0.8;
+  text-transform: uppercase;
+  height: 70px;
+  width: 100%;
+  position: relative;
+  top: -68px;
 }
 
 /* === TEAMS === */
@@ -324,7 +322,7 @@ header .header-contact-link svg {
   padding: 60px 0;
   background-color: var(--bg-footer-color);
 }
-.footer .footer-logo {
+.footer-logo {
   font-family: var(--second-font);
   font-weight: 700;
   font-size: 26px;
@@ -333,19 +331,19 @@ header .header-contact-link svg {
   padding-bottom: 20px;
   display: inline-block;
 }
-.footer .footer-logo span {
+.footer-logo span {
   color: var(--accent-color);
 }
-.footer .footer-item {
+.footer-item {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-accent-color);
   padding-bottom: 10px;
 }
-.footer .footer-item:last-child {
+.footer-item:last-child {
   padding-bottom: 0;
 }
-.footer .footer-link {
+.footer-link {
   color: var(--contact-footer-color);
 }
 
@@ -361,7 +359,7 @@ header .header-contact-link svg {
   background-color: rgba(0, 0, 0, 0.5);
   animation: fadeInOverlay 0.3s ease forwards;
 }
-.modal .modal-content {
+.modal-content {
   background: #fff;
   padding: 30px;
   max-width: 400px;
@@ -375,7 +373,7 @@ header .header-contact-link svg {
   transform: scale(0.8);
   animation: modalFadeScale 0.3s ease forwards;
 }
-.modal .modal-close {
+.modal-close {
   position: absolute;
   top: 10px;
   right: 15px;
@@ -386,21 +384,21 @@ header .header-contact-link svg {
   border: solid 1px #757575;
   outline: none;
 }
-.modal .modal-form {
+.modal-form {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.modal .modal-form input {
+.modal-form input {
   padding: 10px 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
   outline: none;
 }
-.modal .modal-form label {
+.modal-form label {
   color: #757575;
 }
-.modal .modal-form button {
+.modal-form button {
   display: flex;
   padding: 10px 12px;
   border: none;
@@ -416,7 +414,7 @@ header .header-contact-link svg {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
-.modal .modal-header h1 {
+.modal-header h1 {
   display: flex;
   justify-content: center;
   color: var(--title-color);

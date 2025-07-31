@@ -1,0 +1,32 @@
+.work {
+  padding-bottom: 94px;
+
+  &-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+    padding-bottom: 50px;
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      background-color: #2f303a;
+      opacity: 0.8;
+      text-transform: uppercase;
+      height: 70px;
+      width: 100%;
+      position: relative;
+      top: -68px;
+    }
+  }
+}
