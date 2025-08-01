@@ -121,7 +121,7 @@ header .header-contact-link svg {
 .hero {
   padding: 200px 0;
   text-align: center;
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/main-page/hero-bg.png) no-repeat center/cover;
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-page/hero-bg.png) no-repeat center/cover;
 }
 .hero-title {
   color: var(--second-accent-color);
@@ -157,7 +157,7 @@ header .header-contact-link svg {
 }
 .details-item::before {
   content: "";
-  background: url("../../images/main-page/fistpicture.svg") center no-repeat, var(--bg-button);
+  background: url("../images/main-page/fistpicture.svg") center no-repeat, var(--bg-button);
   width: 270px;
   height: 120px;
   display: block;
@@ -165,13 +165,13 @@ header .header-contact-link svg {
   margin-bottom: 30px;
 }
 .details-item:nth-child(2)::before {
-  background-image: url("../../images/main-page/Vector.svg");
+  background-image: url("../images/main-page/Vector.svg");
 }
 .details-item:nth-child(3)::before {
-  background-image: url("../../images/main-page/diagram.svg");
+  background-image: url("../images/main-page/diagram.svg");
 }
 .details-item:nth-child(4)::before {
-  background-image: url("../../images/main-page/astronaut1.svg");
+  background-image: url("../images/main-page/astronaut1.svg");
 }
 .details-title {
   letter-spacing: 0.03em;
@@ -275,38 +275,38 @@ header .header-contact-link svg {
   display: flex;
   gap: 30px;
 }
-.teams-list-item {
+.teams-list .teams-item {
   border-radius: 0 0 4px 4px;
   text-align: center;
   background-color: var(--second-accent-color);
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.14), 0 1px 3px rgba(0, 0, 0, 0.12);
 }
-.teams-list-item .teams-image {
+.teams-list .teams-item .teams-image {
   width: 270px;
   height: 260px;
   display: inline-block;
   padding-bottom: 30px;
 }
-.teams-list-item .teams-name {
+.teams-list .teams-item .teams-name {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.03em;
   color: var(--title-color);
   padding-bottom: 10px;
 }
-.teams-list-item .teams-job {
+.teams-list .teams-item .teams-job {
   font-size: 16px;
   letter-spacing: 0.03em;
   color: var(--text-color);
   padding-bottom: 30px;
 }
-.teams-list-item .teams-messengers {
+.teams-list .teams-item .teams-messengers {
   display: flex;
   justify-content: center;
   gap: 10px;
   margin-bottom: 30px;
 }
-.teams-list-item .teams-messengers svg {
+.teams-list .teams-item .teams-messengers svg {
   fill: #afb1b8;
   border-radius: 50%;
   padding: 10px;
@@ -315,7 +315,7 @@ header .header-contact-link svg {
   transition: 0.3s;
   cursor: pointer;
 }
-.teams-list-item .teams-messengers svg:hover {
+.teams-list .teams-item .teams-messengers svg:hover {
   fill: var(--second-accent-color);
   background-color: var(--accent-color);
 }
