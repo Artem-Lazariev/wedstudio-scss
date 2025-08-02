@@ -1,0 +1,28 @@
+
+/* === GLOBAL STYLES === */
+@import "../scss/utils/value.scss";
+/* === BODY === */
+@import "../scss/components/body.scss";
+/* === HEADER === */
+header {
+  @import "../scss/components/header.scss";
+  margin-bottom: 15px;
+}
+/* ===  HERO === */
+@import "../scss/components/hero.scss";
+/* === DETAILS === */
+@import "../scss/components/details.scss";
+/* === COMPANY === */
+@import "../scss/components/company.scss";
+/* === WORK === */
+@import "../scss/components/work.scss";
+/* === TEAMS === */
+@import "../scss/components/_teams.scss";
+/* === FOOTER === */
+@import "../scss/components/_footer.scss";
+/* === MODAL === */
+@import "../scss/components/_modal.scss";
+/* === ANIMATIONS === */
+@import "../scss/components/_animations.scss";
+/* === PORTFOLIO === */
+@import "../scss/components/portfolio.scss";
