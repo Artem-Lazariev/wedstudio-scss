@@ -1,0 +1,28 @@
+
+/* === GLOBAL STYLES === */
+@import "alue";
+/* === BODY === */
+@import "nts/body";
+/* === HEADER === */
+header {
+  @import "nts/header";
+  margin-bottom: 15px;
+}
+/* ===  HERO === */
+@import "nts/hero";
+/* === DETAILS === */
+@import "nts/details";
+/* === COMPANY === */
+@import "nts/company";
+/* === WORK === */
+@import "nts/work";
+/* === TEAMS === */
+@import "nts/teams";
+/* === FOOTER === */
+@import "nts/footer";
+/* === MODAL === */
+@import "nts/modal";
+/* === ANIMATIONS === */
+@import "nts/animations";
+/* === PORTFOLIO === */
+@import "nts/portfolio";
