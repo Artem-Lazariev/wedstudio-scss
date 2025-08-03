@@ -18,7 +18,7 @@
     justify-content: space-between;
 
     div {
-      @include flex ();
+      @include flex1 ();
       color: #fff;
       background-color: #2f303a;
       opacity: 0.8;
