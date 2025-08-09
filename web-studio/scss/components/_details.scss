@@ -1,0 +1,40 @@
+@import "../utils/mixins";
+.details {
+  padding: 94px 0;
+
+  &-list {
+    display: flex;
+    gap: 30px;
+  }
+
+  &-item {
+    &::before {
+      content: "";
+      background: url("../images/main-page/fistpicture.svg") center no-repeat, var(--bg-button);
+      width: 270px;
+      height: 120px;
+      display: block;
+      border-radius: 4px;
+      margin-bottom: 30px;
+    }
+
+    &:nth-child(2)::before { background-image: url("../images/main-page/Vector.svg"); }
+    &:nth-child(3)::before { background-image: url("../images/main-page/diagram.svg"); }
+    &:nth-child(4)::before { background-image: url("../images/main-page/astronaut1.svg"); }
+  }
+
+  &-title {
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-color);
+    font-weight: 700;
+    padding-bottom: 10px;
+    @include responsive-text(36px, 700, 1.33, 0.03em);
+  }
+
+  &-desc {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+  }
+}

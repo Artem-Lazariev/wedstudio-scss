@@ -1,28 +1,28 @@
 
 /* === GLOBAL STYLES === */
-@import "alue";
+@import "../scss/utils/value";
 /* === BODY === */
-@import "nts/body";
+@import "../scss/components/body";
 /* === HEADER === */
 header {
-  @import "nts/header";
+  @import "../scss/components/header";
   margin-bottom: 15px;
 }
 /* ===  HERO === */
-@import "nts/hero";
+@import "../scss/components/hero";
 /* === DETAILS === */
-@import "nts/details";
+@import "../scss/components/details";
 /* === COMPANY === */
-@import "nts/company";
+@import "../scss/components/company";
 /* === WORK === */
-@import "nts/work";
+@import "../scss/components/work";
 /* === TEAMS === */
-@import "nts/teams";
+@import "../scss/components/teams";
 /* === FOOTER === */
-@import "nts/footer";
+@import "../scss/components/footer";
 /* === MODAL === */
-@import "nts/modal";
+@import "../scss/components/modal";
 /* === ANIMATIONS === */
-@import "nts/animations";
+@import "../scss/components/animations";
 /* === PORTFOLIO === */
-@import "nts/portfolio";
+@import "../scss/components/portfolio";

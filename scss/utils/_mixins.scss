@@ -1,15 +1,5 @@
-@mixin flex1($justify: center, $align: center) {
-  display: flex;
-  justify-content: $justify;
-  align-items: $align;
-}
 
-@mixin flex($justify: center, $align: center) {
-  display: flex;
-  justify-content: $justify;
-  align-items: $align;
-}
-@mixin flex2($justify: flex-start, $align: stretch, $direction: row, $gap: 0) 
+@mixin flex($justify: flex-start, $align: stretch, $direction: row, $gap: 0) 
 {
   display: flex;
   justify-content: $justify;
