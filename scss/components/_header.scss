@@ -3,11 +3,7 @@
   border-bottom: 1px solid var(--border-header);
   margin-bottom: 15px;
 
-  &-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+
 
   &-list,
   &-contact-list {
@@ -16,10 +12,9 @@
   }
 
   &-wrapper {
-    display: flex;
-    justify-content: space-between;
     padding-left: 93px;
     width: 100%;
+    display: none;
   }
 
   &-logo {
@@ -84,4 +79,4 @@
       fill: currentColor;
     }
   }
-}/*h*/
+}  

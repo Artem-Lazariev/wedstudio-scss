@@ -28,7 +28,7 @@ body {
 
 .container {
   margin: auto;
-  width: 1170px;
+  width: 100vw;
 }
 
 ul {
@@ -49,20 +49,14 @@ header .header {
   border-bottom: 1px solid var(--border-header);
   margin-bottom: 15px;
 }
-header .header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 header .header-list, header .header-contact-list {
   display: flex;
   gap: 50px;
 }
 header .header-wrapper {
-  display: flex;
-  justify-content: space-between;
   padding-left: 93px;
   width: 100%;
+  display: none;
 }
 header .header-logo {
   font-family: var(--second-font);
@@ -122,7 +116,10 @@ header .header-contact-link svg {
 .hero {
   padding: 200px 0;
   text-align: center;
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-page/hero-bg.png) no-repeat center/cover;
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/main-page/hero-bg.png) no-repeat center/cover;
+}
+.hero .hero .container {
+  width: 100vw;
 }
 .hero-title {
   color: var(--second-accent-color);
@@ -154,11 +151,21 @@ header .header-contact-link svg {
 }
 .details-list {
   display: flex;
+  flex-direction: column;
   gap: 30px;
 }
+.details-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .details-item::before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   content: "";
-  background: url("../images/main-page/fistpicture.svg") center no-repeat, var(--bg-button);
+  background: url("../../images/main-page/fistpicture.svg") center no-repeat, var(--bg-button);
   width: 270px;
   height: 120px;
   display: block;
@@ -166,13 +173,13 @@ header .header-contact-link svg {
   margin-bottom: 30px;
 }
 .details-item:nth-child(2)::before {
-  background-image: url("../images/main-page/Vector.svg");
+  background-image: url("../../images/main-page/Vector.svg");
 }
 .details-item:nth-child(3)::before {
-  background-image: url("../images/main-page/diagram.svg");
+  background-image: url("../../images/main-page/diagram.svg");
 }
 .details-item:nth-child(4)::before {
-  background-image: url("../images/main-page/astronaut1.svg");
+  background-image: url("../../images/main-page/astronaut1.svg");
 }
 .details-title {
   letter-spacing: 0.03em;
@@ -202,8 +209,11 @@ header .header-contact-link svg {
 }
 .company-list {
   display: flex;
+  align-items: center;
+  gap: 30px;
   justify-content: space-between;
   width: 100%;
+  flex-direction: column;
 }
 .company-list li {
   display: flex;
@@ -230,6 +240,7 @@ header .header-contact-link svg {
 /* === WORK === */
 .work {
   padding-bottom: 94px;
+  display: none;
 }
 .work-title {
   text-align: center;
@@ -278,6 +289,9 @@ header .header-contact-link svg {
 }
 .teams-list {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 30px;
 }
 .teams-list .teams-item {
@@ -462,7 +476,9 @@ header .header-contact-link svg {
 }
 .portfolio .button-list {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* delete*/
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 8px;
   padding-bottom: 50px;
 }
@@ -487,6 +503,7 @@ header .header-contact-link svg {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
 }
 .portfolio .portfolio-blue {
+  display: none; /* delete*/
   background-color: var(--accent-color);
   opacity: 0;
   color: var(--second-accent-color);
@@ -504,7 +521,8 @@ header .header-contact-link svg {
 .portfolio .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  flex-direction: column;
+  gap: 60px;
 }
 .portfolio .portfolio-item {
   border-bottom: 1px solid var(--border-portfolio);
@@ -543,4 +561,12 @@ header .header-contact-link svg {
   letter-spacing: 0.03em;
   color: var(--text-color);
   padding: 0 24px 20px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex-direction: row;
+  }
 }

@@ -1,8 +1,11 @@
 .hero {
   padding: 200px 0;
   text-align: center;
-  background: linear-gradient(rgba(47,48,58,0.4), rgba(47,48,58,0.4)), url(../images/main-page/hero-bg.png) no-repeat center/cover;
+  background: linear-gradient(rgba(47,48,58,0.4), rgba(47,48,58,0.4)), url(../../images/main-page/hero-bg.png) no-repeat center/cover;
 
+  .hero .container {
+    width: 100vw;
+  }
   &-title {
     color: var(--second-accent-color);
     font-weight: 900;

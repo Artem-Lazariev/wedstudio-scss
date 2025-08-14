@@ -4,7 +4,10 @@
 
   .button-list {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* delete*/
+    flex-direction: row; 
+    flex-wrap: wrap;
+
     gap: 8px;
     padding-bottom: 50px;
   }
@@ -34,6 +37,7 @@
   }
 
   .portfolio-blue {
+    display: none; /* delete*/
     background-color: var(--accent-color);
     opacity: 0;
     color: var(--second-accent-color);
@@ -52,7 +56,8 @@
   .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    flex-direction: column;
+    gap: 60px;
   }
 
   .portfolio-item {
@@ -100,6 +105,13 @@
       padding: 0 24px 20px;
     }
   }
+
+  @media screen and (min-width: 768px) {
+    .portfolio-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        flex-direction: row;
+    }
 }
-
-
+}

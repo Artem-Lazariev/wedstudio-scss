@@ -14,8 +14,11 @@
 
   &-list {
     display: flex;
+    align-items: center;
+    gap: 30px;
     justify-content: space-between;
     width: 100%;
+    flex-direction: column;
 
     li {
       @include flex();
