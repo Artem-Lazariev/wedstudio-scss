@@ -8,7 +8,7 @@ body {
 
 .container {
   margin: auto;
-  width: 100vw;
+  width: 480px;
 }
 ul {
   list-style-type: none;
@@ -16,4 +16,15 @@ ul {
 }
 a {
   text-decoration: none;
+}
+@media screen and (min-width: 757px){
+  .container {
+    width: 1170px;
+  }
+}
+@media screen and (min-width: 0) and (max-width: 756px) {
+  .container {
+    width: 100vw;
+
+  }
 }
