@@ -21,7 +21,10 @@
     flex-direction: column;
 
     li {
-      @include flex();
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
       border: 1px solid #757575;
       color: #757575;
       width: 170px;
