@@ -3,18 +3,33 @@
   border-bottom: 1px solid var(--border-header);
   margin-bottom: 15px;
 
-
-
+  &-nav {
+    margin-right: 30px;
+  }  
+    &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   &-list,
   &-contact-list {
     display: flex;
     gap: 50px;
+    margin-right: 30px;
   }
 
   &-wrapper {
     padding-left: 93px;
     width: 100%;
     display: none;
+  }
+  @media screen and (min-width: 1170px) {
+    &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 93px;
+    width: 100%;
+    }
   }
 
   &-logo {

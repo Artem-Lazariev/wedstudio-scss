@@ -75,3 +75,12 @@
     }
   }
 }
+@media screen and (min-width: 1170px) {
+  .teams-list {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .teams-item {
+    display: block;
+  }
+}
