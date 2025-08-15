@@ -220,6 +220,15 @@ header .header-contact-link svg {
     display: block;
   }
 }
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .details-list {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
 /* === COMPANY === */
 .company {
   display: flex;
@@ -272,6 +281,15 @@ header .header-contact-link svg {
   .company-list li {
     width: 200px;
     height: 100px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .company-list {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 }
 /* === WORK === */
@@ -385,6 +403,16 @@ header .header-contact-link svg {
   .teams-list {
     flex-direction: row;
     justify-content: center;
+  }
+  .teams-item {
+    display: block;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .teams-list {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   .teams-item {
     display: block;

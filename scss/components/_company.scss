@@ -55,3 +55,14 @@
     }
   }
 }
+@media screen and (min-width:480px) and (max-width: 768px) {
+  .company-list {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+  }
+  
+}
